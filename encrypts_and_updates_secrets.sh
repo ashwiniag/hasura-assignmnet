@@ -59,12 +59,12 @@ fi
 
 
 # Update the yaml file in Github.
- echo "INFO: The $FILE is updated. Do verify."
+echo "INFO: The $FILE is updated. Do verify."
 
-# echo "INFO: Committing to the branch <>, get it reviewed"
-#git checkout -b updates-$(FILE)-file
-#git commit -m "Updates $(FILE) with KEY=$KEY and its encrypted Value"
-#git push origin updates-$(FILE)-file
+echo "INFO: Committing to the branch <>, get it reviewed"
+git checkout -b updates-$(FILE)-file
+git commit -m "Updates $(FILE) with KEY=$KEY and its encrypted Value"
+git push origin updates-$(FILE)-file
 
 echo "INFO: deploys the latest $(FILE)"
 cd $current_dir/provision/services_k8s
