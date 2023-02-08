@@ -64,6 +64,7 @@ To use the script, export your AWS profile `export AWS_PROFILE=<>` and run it wi
     - Encrypts the value using the provided key.
     - Checks if the key already exists. If it does, the script updates the existing value. If not, it adds the key/value pair to the secrets store. Either way it encrypts Value. 
     - Deploys the latest version of the secrets store.
+    - The script check the yaml file in directory provision/services_k8s/encrypted_env-echo_secrets.yaml
     
     
 ### Testing:  
