@@ -81,29 +81,20 @@ Endpoints:
 
 Note:
   
-###  Room for improvements There is scope of improvements.  
+###  Room for improvements There is scope of improvements. 
+
+- The bash provision script should be modified for more control and interactive, like displaying plans and then allowing the user to decide whether to apply changes. 
+- Incorporating creations of ECR repo to have the statefiles accountability, even if it is just one time creation. 
+- Currently for the sake of the scope of task-2 and demonstrated example, where we have a separate kubernetes secrets yaml file. This yaml file' values isn't passed to the application deployed, this could be incorporated. 
+For now, it decrypts the file, checks the file based on Key and updates/adds, encrypts the file and deploys the yaml file. 
+ 
 
 TODOs:
 Task-1:
 To create a Helm chart for deploying application.
 
 Task-2:
-Needs claryfication as requirement provided and example given are bit ambigious. 
-- Is the secret file to be encrypted too and then uploaded to github?
+To git pull for latest file and git commit to new branch.
+Needs clarification as requirement provided and example given are bit ambigious. 
 - The requirement demonstrated tells to take the key,value and update the file based on the key, i.e if exsist update the key and if new add it.
-  So, the script takes care of the logic based on Key provided, so why do we need `--existing false` as argument?
--   
-
-
-  
-
-...to be continued in thinking brain encountered 5xx
-
-[] update readme and mention todos
-[] architecture
-[X] Ask if there is time for clarification 
-[] Add users early for good review 
-[] Prepare for interview 
-[X] 9:30 tak uth. 
-[X]1hr wrap up 11 and revert to mails. 
-[] 4hrs prep
+  So, the script takes care of the logic based on Key provided, so why do we need `--existing false` as argument? 
