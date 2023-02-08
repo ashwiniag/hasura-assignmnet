@@ -77,9 +77,8 @@ kubectl get svc -n default -o json | jq '.items[].status.loadBalancer.ingress[0]
 
 Endpoints:  
 
-- Application serves: http:< lb >/  
+- Application serves at: http:< lb >/  
 
-Note:
   
 ###  Room for improvements There is scope of improvements. 
 
