@@ -50,7 +50,7 @@ Endpoint is accessible on port `8000`
   
 Docker image is build locally and uploads in AWS ECR.   
     
-### Architecture diagram ![Diagram](https://github.com/ashwiniag/hasura-assignment/blob/main/hasura-architecture.png?raw=true)    
+### Architecture diagram ![Diagram](https://github.com/ashwiniag/hasura-assignmnet/blob/63125424c9421009a29db81e4112511bc512be57/hasura-architecture.png?raw=true)    
     
     
 ### Provisioning: How to use the scripts to implement. 
