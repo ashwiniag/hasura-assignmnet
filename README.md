@@ -90,9 +90,11 @@ For now, it decrypts the file, checks the file based on Key and updates/adds, en
 
 TODOs:
 Task-1:
+
 To create a Helm chart for deploying application.
 
 Task-2:
+
 To git pull for latest file and git commit to new branch.
 Needs clarification as requirement provided and example given are bit ambigious. 
 - The requirement demonstrated tells to take the key,value and update the file based on the key, i.e if exsist update the key and if new add it.
