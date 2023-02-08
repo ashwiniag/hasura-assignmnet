@@ -13,7 +13,7 @@ links: clean
 	ln -s ../../templates/nginx-ingress.tf .
 	ln -s ../../templates/one_key_value .
 	ln -s ../../templates/backend.tf .
-	ln -s ../../templates/env-echo_secrets.yaml .
+	ln -s ../../templates/encrypted_env-echo_secrets.yaml .
 
 
 init: links
@@ -23,7 +23,7 @@ create_kubeconfig_dir:
 	mkdir -p ${kubeconfig_dir}
 
 kubeconfig: create_kubeconfig_dir
-	rm -rf ${kubeconfig_path}; aws eks --region ap-south-1 update-kubeconfig --name hasura-saitama-dragon --kubeconfig ${kubeconfig_path}
+	rm -rf ${kubeconfig_path}; aws eks --region ap-south-1 update-kubeconfig --name hasura-saitama-alpha --kubeconfig ${kubeconfig_path}
 
 plan: init
 	TF_VAR_kubeconfig_path=${kubeconfig_path} TF_VAR_host_infra=${host_infra} terraform plan

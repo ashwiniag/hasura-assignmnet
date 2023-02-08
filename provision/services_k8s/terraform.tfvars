@@ -1,6 +1,6 @@
 region          = "ap-south-1"
 cluster         = "hasura-saitama"
-env             = "dragon"
+env             = "alpha"
 
 
 // For the scope testing, disable these allocations in the code.
