@@ -30,12 +30,12 @@ plan: init
 
 apply: init
 	TF_VAR_kubeconfig_path=${kubeconfig_path} TF_VAR_host_infra=${host_infra} terraform apply
-	kubectl apply -f env-echo_secrets.yaml --kubeconfig ${kubeconfig_path}
+	kubectl apply -f encrypted_env-echo_secrets.yaml --kubeconfig ${kubeconfig_path}
 
 update: init
-	kubectl apply -f env-echo_secrets.yaml --kubeconfig ${kubeconfig_path}
+	kubectl apply -f encrypted_env-echo_secrets.yaml --kubeconfig ${kubeconfig_path}
 
 destroy: init
 	TF_VAR_kubeconfig_path=${kubeconfig_path} TF_VAR_host_infra=${host_infra} terraform destroy
-	kubectl delete -f env-echo_secrets.yaml --kubeconfig ${kubeconfig_path}
+	kubectl delete -f encrypted_env-echo_secrets.yaml --kubeconfig ${kubeconfig_path}
 
